@@ -1,0 +1,47 @@
+
+/*mobile first*/
+.container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.row {
+    display: flex;
+    flex-direction: column;
+    margin: 0 -15px;
+}
+[class*="col-"] {
+    padding: 0 15px;
+}
+.col-xs-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+
+/*tablet*/
+ @media(min-width: 768px) {
+    .container {
+        max-width: 720px;
+    }
+ }
+
+ /*laptop*/
+ @media(min-width: 992px) {
+    .container {
+        max-width: 960px;
+    }
+ }
+
+ /*desktop*/
+ @media(min-width: 1200px) {
+    .container {
+        max-width: 1140px;
+    }
+ }
+
+
+ .col-md-2 {
+    flex: 0 0 16.6666666667%;
+    max-width: 16.6666666667%;
+ }
