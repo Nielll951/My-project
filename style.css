@@ -6,7 +6,7 @@ body {
     font-family: 'Open Sans', sans-serif;
 } 
 .header {
-    background-color: #000066;
+    background-color: #003366;
     display: flex;
     position: sticky;
     z-index: 5;
@@ -48,8 +48,19 @@ body {
     border: 2px solid transparent;
     margin: 0 6px;
 }
+.menu-item:hover {
+    border: 2px solid #99ccff;
+    border-radius: 4px;
+}
+.menu-item:active {
+    border: 2px solid #3366ff;
+    border-radius: 4px;
+}
+.menu-item:active>.menu-link {
+    color:  #3366ff;;
+}
 .menu-link {
-    color: white;
+    color: #e6eeff;
     font-size: 14px;
     font-weight: 600;
     text-decoration: none;
@@ -62,9 +73,9 @@ body {
 }
 .search-form {
     height: 26px;
-    border: 2px solid white;
+    border: 2px solid #99ccff;
     border-radius: 4px;
-    outline: aqua;
+    outline: none;
     display: flex;
     align-items: center;
     justify-content: space-between;
