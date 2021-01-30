@@ -1,0 +1,15 @@
+@for $i from 1 through 12 {
+    .col-xs-#{$i} {
+        flex: 0 0 percentage($i/12);
+        max-width: 0 0 percentage($i/12);
+    }
+}
+
+@media(min-width: 768px) {
+    @for $i from 1 through 12 {
+        .col-md-#{$i} {
+            flex: 0 0 percentage($i/12);
+            max-width: 0 0 percentage($i/12);
+        }
+    }
+}
