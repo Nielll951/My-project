@@ -141,13 +141,42 @@ body {
 }
 .section-padding {
     padding-top: 35px;
-    padding-bottom: 35px;
+    padding-bottom: 35px; 
 }
 .section-title {
     text-align: center;
     text-transform: uppercase;
     color: #cc9900;
     font-size: 15px;
+}
+.title-text {
+    margin-top: 25px;
+    text-align: center;
+    color: #4d5c66;
+    font-weight: bold;
+    font-size: 35px;
+    text-transform: capitalize;
+}
+.about-text {
+    padding-top: 30px;
+    text-align: center;
+    color: #3d5c5c;
+    line-height: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+.about-link-block {
+    text-align: center;
+    padding-top: 35px;
+}
+.link {
+    text-transform: capitalize;
+    border: 1px solid #476b6b;
+    text-decoration: none;
+    color: #3d5c5c;
+    padding: 10px 25px;
+    line-height: 20px;
+    border-radius: 3px;
 }
 
 /*mobile middle*/
@@ -170,6 +199,15 @@ body {
     .slider {
         padding-top: 150px;
         padding-bottom: 150px;
+    }
+    .about-text {
+        font-size: 18px;
+    }
+    .about-link-block {
+        padding-top: 60px;
+    }
+    .link {
+        padding: 20px 40px;
     }
  }
 
@@ -287,6 +325,16 @@ body {
     .section-title {
         font-weight: 600;
         font-size: 20px;
+    }
+    .title-text {
+        margin-top: 35px;
+        text-align: center;
+        color: #4d5c66;
+        font-weight: bold;
+        font-size: 60px;
+    }
+    .about-text {
+        padding-top: 40px;
     }
  }
 
