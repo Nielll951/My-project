@@ -281,6 +281,18 @@ body {
   font-style: italic;
 }
 
+.section-padding {
+  padding-top: 35px;
+  padding-bottom: 35px;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: uppercase;
+  color: #cc9900;
+  font-size: 15px;
+}
+
 /*mobile middle*/
 @media (min-width: 426px) {
   .container {
@@ -430,6 +442,16 @@ body {
 
   .slider-title {
     font-size: 85px;
+  }
+
+  .section-padding {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .section-title {
+    font-weight: 600;
+    font-size: 20px;
   }
 }
 /*desktop*/
