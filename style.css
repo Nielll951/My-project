@@ -282,8 +282,8 @@ body {
 }
 
 .section-padding {
-  padding-top: 35px;
-  padding-bottom: 35px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section-title {
@@ -317,13 +317,22 @@ body {
 }
 
 .link {
-  text-transform: capitalize;
+  text-transform: uppercase;
   border: 1px solid #476b6b;
   text-decoration: none;
   color: #3d5c5c;
   padding: 10px 25px;
   line-height: 20px;
   border-radius: 3px;
+}
+.link:hover {
+  color: white;
+  background-color: grey;
+}
+
+.products-list {
+  display: flex;
+  flex-direction: column;
 }
 
 /*mobile middle*/
