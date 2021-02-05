@@ -140,7 +140,7 @@ body {
     font-style: italic;
 }
 .section-padding {
-    padding-top: 40px;
+    padding-top: 70px;
     padding-bottom: 40px; 
 }
 .section-title {
@@ -157,17 +157,18 @@ body {
     font-size: 35px;
     text-transform: capitalize;
 }
-.about-text {
-    padding-top: 30px;
+.content-text {
+    margin-top: 20px;
     text-align: center;
     color: #3d5c5c;
     line-height: normal;
     font-size: 14px;
     line-height: 1.7;
+    margin-bottom: 20px;
 }
 .about-link-block {
     text-align: center;
-    padding-top: 35px;
+    padding-top: 10px;
 }
 .link {
     text-transform: uppercase;
@@ -176,7 +177,7 @@ body {
     color: #3d5c5c;
     padding: 10px 25px;
     line-height: 20px;
-    border-radius: 3px;
+    border-radius: 3px; 
     &:hover {
         color: white;
         background-color: grey;
@@ -193,8 +194,40 @@ body {
 }
 .block-img {
     height: 205px;
+    margin-bottom: 10px; 
+}
+.team-item {
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+}
+.team-item-img {
+    display: block;
+    width: 100%;
+}
+.member-job {
+    display: block;
+}
+.team-item-text {
+    padding: 17px;
+}
+.member-job {
+    text-align: start;
     margin-bottom: 10px;
 }
+.team-member-name {
+    color: #56646d;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+.team-item-par {
+    color: #021725;
+    line-height: 1.6;
+    padding-bottom: 30px;
+}
+// .team-row {
+    // margin-top: 20px;
+    // margin-bottom: 20px;
+// }
 // .products-list {
     // display: flex;
     // flex-direction: column;
@@ -251,14 +284,18 @@ body {
         padding-top: 150px;
         padding-bottom: 150px;
     }
-    .about-text {
+    .content-text {
         font-size: 18px;
     }
     .about-link-block {
-        padding-top: 60px;
+        margin-top: 15px;
     }
     .link {
         padding: 20px 40px;
+    }
+    .col-sm-4 {
+        flex: 0 0 33.33333%;
+        max-width: 33.33333%;
     }
     .col-sm-6 {
         flex: 0 0 50%;
@@ -269,8 +306,15 @@ body {
         flex-wrap: wrap;
         flex-direction: row;
     }
+    .team-row {
+        display: flex;
+        flex-direction: row;
+    }
     .block-img {
         margin-bottom: 20px;
+    }
+    .section-padding {
+        padding-top: 100px;
     }
  }
 
@@ -386,7 +430,7 @@ body {
         font-size: 85px;
     }
     .section-padding {
-        padding-top: 80px;
+        padding-top: 120px;
         padding-bottom: 80px;
     }
     .section-title {
@@ -402,6 +446,13 @@ body {
     }
     .about-text {
         padding-top: 40px;
+    }
+    .about-link-block {
+        margin-top: 25px;
+    }
+    .content-text {
+        margin-top: 45px;
+        margin-bottom: 45px;
     }
  }
 
