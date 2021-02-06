@@ -140,9 +140,7 @@ body {
     font-style: italic;
 }
 .section-padding {
-    padding-top: 70px;
-    padding-bottom: 40px; 
-}
+    padding-top: 70px;}
 .section-title {
     text-align: center;
     text-transform: uppercase;
@@ -169,6 +167,8 @@ body {
 .about-link-block {
     text-align: center;
     padding-top: 10px;
+    width: 260px;
+    margin: 0 auto;
 }
 .link {
     text-transform: uppercase;
@@ -176,8 +176,10 @@ body {
     text-decoration: none;
     color: #3d5c5c;
     padding: 10px 25px;
-    line-height: 20px;
     border-radius: 3px; 
+    display: block;
+    height: 57px;
+
     &:hover {
         color: white;
         background-color: grey;
@@ -194,7 +196,7 @@ body {
 }
 .block-img {
     height: 205px;
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
 }
 .team-item {
     margin-bottom: 10px;
@@ -207,7 +209,7 @@ body {
 .member-job {
     display: block;
 }
-.team-item-text {
+.team-item-content {
     padding: 17px;
 }
 .member-job {
@@ -223,6 +225,34 @@ body {
     color: #021725;
     line-height: 1.6;
     padding-bottom: 30px;
+}
+.post-row {
+    margin-top: 30px;
+}
+.post-img {
+    width: 100%;
+    display: block;
+}
+.row-products {
+    margin-top: 20px;
+}
+.post-content {
+    background-color: #f9f9f9;
+    padding: 44px;
+}
+.post-date {
+    text-transform: uppercase;
+    color: #505d68;
+    font-size: 13px;
+}
+.post-name {
+    color: #505d68;
+    font-size: 20px;
+    text-transform: capitalize;
+}
+.post-text {
+    color: #505d68;
+    font-size: 16px;
 }
 // .team-row {
     // margin-top: 20px;
@@ -272,6 +302,18 @@ body {
         flex: 0 0 16.66667%;
         max-width: 16.66667%;
     }
+    .team-item {
+        margin-bottom: 20px;
+    }
+    .post-date {
+        font-size: 15px;
+    }
+    .post-name {
+        font-size: 23px;
+    }
+    .post-text {
+        font-size: 18px;
+    }
 }
 
 /*tablet*/
@@ -305,16 +347,55 @@ body {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        margin-top: 20px;
     }
     .team-row {
         display: flex;
         flex-direction: row;
     }
     .block-img {
-        margin-bottom: 20px;
+        margin-top: 20px;
+        margin-bottom: 0;
     }
     .section-padding {
         padding-top: 100px;
+    }
+    .section-title {
+        font-weight: 600;
+    }
+    .member-job {
+        font-weight: 600;
+    }
+    .team-member-name {
+        font-size: large;
+    }
+    .team-item {
+        margin-bottom: 0;
+    }
+    .col-md-6 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .post-row {
+        display: flex;
+        flex-direction: row;
+        margin-top: 40px;
+    }
+    .padding-cut {
+        padding: 0;
+    }
+    .post-img {
+        padding-left: 15px;
+    }
+    .post-content {
+        margin-right: 15px;
+        padding: 52px;
+    }
+    .post-date {
+        font-size: 15px;
+    }
+    .post-name {
+        font-size: 23px;
     }
  }
 
@@ -431,7 +512,6 @@ body {
     }
     .section-padding {
         padding-top: 120px;
-        padding-bottom: 80px;
     }
     .section-title {
         font-weight: 600;
@@ -453,6 +533,21 @@ body {
     .content-text {
         margin-top: 45px;
         margin-bottom: 45px;
+    }
+    .team-member-name {
+        font-size: x-large;
+    }
+    .post-content {
+        padding: 62px;
+    }
+    .post-date {
+        font-size: 20px;
+    }
+    .post-name {
+        font-size: 32px;
+    }
+    .post-text {
+        font-size: 18px;
     }
  }
 
