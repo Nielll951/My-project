@@ -175,7 +175,7 @@ body {
     border: 1px solid #476b6b;
     text-decoration: none;
     color: #3d5c5c;
-    padding: 10px 25px;
+    padding: 19px 25px;
     border-radius: 3px; 
     display: block;
     height: 57px;
@@ -238,21 +238,44 @@ body {
 }
 .post-content {
     background-color: #f9f9f9;
-    padding: 44px;
 }
 .post-date {
     text-transform: uppercase;
     color: #505d68;
     font-size: 13px;
+    padding-bottom: 10px;
 }
 .post-name {
     color: #505d68;
     font-size: 20px;
     text-transform: capitalize;
+    padding-bottom: 20px;
 }
 .post-text {
     color: #505d68;
     font-size: 16px;
+    line-height: 1.6;
+    padding-bottom: 20px;
+}
+.post-link-block {
+    width: 129px;
+}
+.post-link {
+    text-transform: uppercase;
+    border: 1px solid #476b6b;
+    text-decoration: none;
+    color: #3d5c5c;
+    padding: 10px 25px;
+    border-radius: 3px;
+    display: block;
+    height: 47px;
+    text-align: center;
+    line-height: 1.6;
+
+    &:hover {
+        color: white;
+        background-color: grey;
+    }
 }
 // .team-row {
     // margin-top: 20px;
@@ -312,11 +335,20 @@ body {
         font-size: 23px;
     }
     .post-text {
-        font-size: 18px;
+        font-size: 17px;
     }
 }
 
 /*tablet*/
+@media(max-width: 767px) {
+    .post-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
  @media(min-width: 768px) {
     .container {
         max-width: 720px;
@@ -389,7 +421,7 @@ body {
     }
     .post-content {
         margin-right: 15px;
-        padding: 52px;
+        padding: 27px;
     }
     .post-date {
         font-size: 15px;
@@ -542,12 +574,15 @@ body {
     }
     .post-date {
         font-size: 20px;
+        padding-bottom: 15px;
     }
     .post-name {
         font-size: 32px;
+        padding-bottom: 40px;
     }
     .post-text {
         font-size: 18px;
+        padding-bottom: 55px;
     }
  }
 
@@ -563,6 +598,19 @@ body {
     }
     .slider {
         height: 700px;
+    }
+    .post-content {
+        padding: 75px;
+    }
+    .post-date {
+        padding-bottom: 25px;
+    }
+    .post-name {
+        font-size: 36px;
+    }
+    .post-text {
+        line-height: 2;
+        padding-bottom: 66px;
     }
  } 
  
