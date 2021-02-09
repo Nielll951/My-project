@@ -282,7 +282,8 @@ body {
 }
 
 .section-padding {
-  padding-top: 70px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .section-title {
@@ -570,7 +571,8 @@ body {
   }
 
   .section-padding {
-    padding-top: 100px;
+    padding-top: 60px;
+    padding-bottom: 60px;
   }
 
   .section-title {
@@ -779,7 +781,8 @@ body {
   }
 
   .section-padding {
-    padding-top: 120px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .section-title {
