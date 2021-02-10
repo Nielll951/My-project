@@ -124,11 +124,26 @@ body {
     cursor: pointer;
 }
 .slider {
-    background-image: url(imagesIndex/slider-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
+}
+.index_slider {
+    background-image: url(imagesIndex/slider-bg.png);
     padding-top: 100px;
     padding-bottom: 100px;
+}
+.about_slider {
+    background-image: url(imagesAbout/about-slider-img.png);
+    height: 300px;
+}
+.about_introduction {
+    font-size: 18px;
+    line-height: 1.5;
+    color: #4d5c66;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: lighter;
 }
 .slider-title {
     text-align: center;
@@ -443,6 +458,11 @@ body {
         max-width: 720px;
         padding: 0 15px;
     }
+    .about_introduction {
+        line-height: 1.7;
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
     .slider {
         padding-top: 150px;
         padding-bottom: 150px;
@@ -720,6 +740,9 @@ body {
     .contact-content-title {
         padding-bottom: 40px;
         font-size: 14px;
+    }
+    .about_introduction {
+        padding: 150px 50px;
     }
  }
 
