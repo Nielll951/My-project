@@ -1,0 +1,19 @@
+//variables
+$grey:#f9f9f9;
+
+
+//mixing
+@mixin displayColumn() {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin displayCenter() {
+    display: flex;
+    align-items: center;
+}
+
+@mixin btnHover() {
+    background-color: grey;
+    color: white;
+}

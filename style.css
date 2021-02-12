@@ -159,7 +159,7 @@ body {
 }
 
 .header-row {
-  flex-direction: row;
+  display: flex;
   align-items: center;
 }
 
@@ -220,9 +220,9 @@ body {
   border: 2px solid #99ccff;
   border-radius: 4px;
   outline: none;
+  justify-content: space-between;
   display: flex;
   align-items: center;
-  justify-content: space-between;
 }
 
 .search-form__input {
@@ -349,8 +349,8 @@ body {
   height: 57px;
 }
 .link:hover {
-  color: white;
   background-color: grey;
+  color: white;
 }
 
 .row-link {
@@ -451,8 +451,8 @@ body {
   line-height: 1.6;
 }
 .post-link:hover {
-  color: white;
   background-color: grey;
+  color: white;
 }
 
 .more-from-our-blog-link-block {
@@ -474,8 +474,8 @@ body {
   border-radius: 3px;
 }
 .more-from-our-blog-link:hover {
-  color: white;
   background-color: grey;
+  color: white;
 }
 
 .contact-content {
@@ -733,9 +733,9 @@ body {
   }
 
   .footer-row {
-    flex-direction: row;
-    justify-content: space-between;
+    display: flex;
     align-items: center;
+    justify-content: space-between;
   }
 
   .footer-social {
