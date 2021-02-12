@@ -1,8 +1,8 @@
 //variables
 $grey:#f9f9f9;
+$text-color: #505d68;
 
-
-//mixing
+//mixin 
 @mixin displayColumn() {
     display: flex;
     flex-direction: column;
@@ -16,4 +16,19 @@ $grey:#f9f9f9;
 @mixin btnHover() {
     background-color: grey;
     color: white;
+}
+
+@mixin displayRow() {
+    display: flex;
+    flex-direction: row;
+}
+
+@mixin backgroundImg() {
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin imgProperties() {
+    display: block;
+    width: 100%;
 }

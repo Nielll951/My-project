@@ -161,6 +161,7 @@ body {
 .header-row {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 
 .col-xs-9 {
@@ -233,12 +234,12 @@ body {
 
 .search-input {
   display: block;
+  width: 100%;
   background-color: transparent;
   border: none;
   outline: none;
   padding-left: 6px;
   height: 100%;
-  width: 100%;
   color: white;
 }
 
@@ -262,6 +263,11 @@ body {
   cursor: pointer;
 }
 
+.about__services-img {
+  display: block;
+  width: 100%;
+}
+
 .slider {
   background-size: cover;
   background-repeat: no-repeat;
@@ -279,7 +285,7 @@ body {
 }
 
 .about_introduction {
-  font-size: 18px;
+  font-size: 17px;
   line-height: 1.5;
   color: #4d5c66;
   text-align: center;
@@ -405,8 +411,8 @@ body {
 }
 
 .post-img {
-  width: 100%;
   display: block;
+  width: 100%;
 }
 
 .post-content {
@@ -508,6 +514,15 @@ body {
   align-items: center;
 }
 
+.padding-0 {
+  padding: 0;
+}
+
+.about__services-content {
+  background-color: #f9f9f9;
+  color: #505d68;
+}
+
 .footer-row {
   display: flex;
   justify-content: center;
@@ -562,6 +577,11 @@ body {
   margin-top: 15px;
 }
 
+.about__services-row {
+  display: flex;
+  flex-direction: column;
+}
+
 /*mobile middle*/
 @media (min-width: 426px) {
   .container {
@@ -605,6 +625,11 @@ body {
     padding: 0 15px;
   }
 
+  .about__services-row {
+    display: flex;
+    flex-direction: row;
+  }
+
   .about_introduction {
     line-height: 1.7;
     padding-top: 70px;
@@ -626,6 +651,11 @@ body {
 
   .link {
     padding: 20px 40px;
+  }
+
+  .col-sm-3 {
+    flex: 0 0 25%;
+    max-width: 0 0 25%;
   }
 
   .col-sm-4 {
@@ -956,6 +986,7 @@ body {
 
   .about_introduction {
     padding: 150px 50px;
+    font-size: 18px;
   }
 }
 /*desktop*/

@@ -43,6 +43,7 @@ body {
 
 .header-row {
     @include displayCenter();
+    flex-direction: row;
 }
 
 .col-xs-9 {
@@ -81,7 +82,6 @@ body {
 
 .menu-item:active>.menu-link {
     color: #3366ff;
-    ;
 }
 
 .menu-link {
@@ -114,13 +114,12 @@ body {
 }
 
 .search-input {
-    display: block;
+    @include imgProperties();
     background-color: transparent;
     border: none;
     outline: none;
     padding-left: 6px;
     height: 100%;
-    width: 100%;
     color: white;
 }
 
@@ -144,9 +143,12 @@ body {
     cursor: pointer;
 }
 
+.about__services-img {
+    @include imgProperties();
+}
+
 .slider {
-    background-size: cover;
-    background-repeat: no-repeat;
+    @include backgroundImg;
 }
 
 .index_slider {
@@ -161,7 +163,7 @@ body {
 }
 
 .about_introduction {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.5;
     color: #4d5c66;
     text-align: center;
@@ -257,8 +259,7 @@ body {
 }
 
 .team-item-img {
-    display: block;
-    width: 100%;
+    @include imgProperties();
 }
 
 .member-job {
@@ -287,8 +288,7 @@ body {
 }
 
 .post-img {
-    width: 100%;
-    display: block;
+    @include imgProperties();
 }
 
 .post-content {
@@ -297,20 +297,23 @@ body {
 
 .post-date {
     text-transform: uppercase;
-    color: #505d68;
+    color: $text-color;
+    ;
     font-size: 13px;
     padding-bottom: 10px;
 }
 
 .post-name {
-    color: #505d68;
+    color: $text-color;
+    ;
     font-size: 20px;
     text-transform: capitalize;
     padding-bottom: 20px;
 }
 
 .post-text {
-    color: #505d68;
+    color: $text-color;
+    ;
     font-size: 16px;
     line-height: 1.6;
     padding-bottom: 20px;
@@ -362,7 +365,8 @@ body {
 
 .contact-content {
     background-color: $grey;
-    color: #505d68;
+    color: $text-color;
+    ;
 }
 
 .contact-content-block {
@@ -387,6 +391,15 @@ body {
     height: 93px;
     background-color: #a3a375;
     @include displayCenter();
+}
+
+.padding-0 {
+    padding: 0;
+}
+
+.about__services-content {
+    background-color: $grey;
+    color: $text-color;
 }
 
 .footer-row {
@@ -444,44 +457,9 @@ body {
     margin-top: 15px;
 }
 
-// .team-row {
-// margin-top: 20px;
-// margin-bottom: 20px;
-// }
-// .products-list {
-// display: flex;
-// flex-direction: column;
-// }
-// [class*="product-"] {
-// width: 100%;
-// height: 220px;
-// margin-bottom: 3px;
-// }
-// .product-item-1 {
-// background-image: url(imagesIndex/product-1.png);
-// }
-// .product-item-2 {
-// background-image: url(imagesIndex/product-2.png);
-// }
-// .product-item-3 {
-// background-image: url(imagesIndex/product-3.png);
-// }
-// .product-item-4 {
-// background-image: url(imagesIndex/product-4.png);
-// }
-// .product-item-5 {
-// background-image: url(imagesIndex/product-5.png);
-// }
-// .product-item-6 {
-// background-image: url(imagesIndex/product-6.png);
-// }
-// .product-item-7 {
-// background-image: url(imagesIndex/product-7.png);
-// }
-// .product-item-8 {
-// background-image: url(imagesIndex/product-8.png);
-// }
-// 
+.about__services-row {
+    @include displayColumn();
+}
 
 /*mobile middle*/
 @media(min-width: 426px) {
@@ -512,6 +490,7 @@ body {
 }
 
 /*tablet*/
+
 @media(max-width: 767px) {
     .post-content {
         padding: 20px;
@@ -521,10 +500,15 @@ body {
     }
 }
 
+
 @media(min-width: 768px) {
     .container {
         max-width: 720px;
         padding: 0 15px;
+    }
+
+    .about__services-row {
+        @include displayRow();
     }
 
     .about_introduction {
@@ -548,6 +532,11 @@ body {
 
     .link {
         padding: 20px 40px;
+    }
+
+    .col-sm-3 {
+        flex: 0 0 25%;
+        max-width: 0 0 25%;
     }
 
     .col-sm-4 {
@@ -878,6 +867,7 @@ body {
 
     .about_introduction {
         padding: 150px 50px;
+        font-size: 18px;
     }
 }
 
