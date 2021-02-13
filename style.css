@@ -537,6 +537,9 @@ body {
   line-height: 1.6;
   text-transform: capitalize;
 }
+.about__services-content .title-text-right {
+  text-align: start;
+}
 
 .footer-row {
   display: flex;
@@ -839,7 +842,7 @@ body {
   .about__services-content {
     padding: 10px;
   }
-  .about__services-content .title-text {
+  .about__services-content h3 {
     text-align: start;
     font-size: 30px;
     margin-bottom: 15px;
