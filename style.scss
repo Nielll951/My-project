@@ -557,6 +557,8 @@ body {
 
 }
 
+
+
 /*mobile middle*/
 @media(min-width: 426px) {
     .container {
@@ -683,9 +685,19 @@ body {
         margin-bottom: 0;
     }
 
+    .col-md-5 {
+        flex: 0 0 41.6666666667%;
+        max-width: 0 0 41.6666666667%;
+    }
+
     .col-md-6 {
         flex: 0 0 50%;
         max-width: 50%;
+    }
+
+    .col-md-7 {
+        flex: 0 0 58.3333333333%;
+        max-width: 0 0 58.3333333333%;
     }
 
     .post-row {
@@ -715,7 +727,7 @@ body {
     }
 
     .btn-link {
-        margin-top: 40px;
+        margin-top: 60px;
     }
 
     .contact-row {
@@ -778,6 +790,52 @@ body {
             font-size: 16px;
             font-weight: 300;
             line-height: 1.9;
+        }
+    }
+
+    .row-contact {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .padding-left-6 {
+        padding-left: 6px;
+    }
+
+    .yellow-square {
+        background-color: #d3b000;
+
+        .contact-adress {
+            font-size: 23px;
+            text-transform: capitalize;
+            line-height: 1.4;
+            padding: 80px 0;
+        }
+    }
+
+    .line {
+        border-bottom: 3px solid white;
+        width: 30px;
+    }
+
+    .black-square {
+        background-color: #212121;
+
+        .phone-numbers {
+            padding: 80px 0;
+
+            p {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+        }
+    }
+
+    .contact__text-content {
+        padding: 37px;
+
+        p {
+            font-size: 18px;
         }
     }
 }
@@ -1020,6 +1078,41 @@ body {
             line-height: 2.29;
         }
     }
+
+    .yellow-square {
+        background-color: #d3b000;
+
+        .contact-adress {
+            font-size: 29px;
+            text-transform: capitalize;
+            line-height: 1.4;
+            padding-top: 80px;
+            padding-bottom: 136px;
+        }
+    }
+
+    .line {
+        border-bottom: 3px solid white;
+        width: 30px;
+    }
+
+    .black-square {
+        background-color: #212121;
+
+        .phone-numbers {
+            padding: 50px 0;
+
+            p {
+                font-size: 20px;
+                line-height: 1.6;
+            }
+        }
+    }
+
+    .square-content {
+        padding: 30px;
+        color: white;
+    }
 }
 
 /*desktop*/
@@ -1056,7 +1149,7 @@ body {
     }
 
     .btn-link {
-        margin-top: 60px;
+        margin-top: 50px;
     }
 
     .about__services-content {
