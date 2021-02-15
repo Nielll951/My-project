@@ -589,6 +589,8 @@ body {
 
 /*tablet*/
 
+// 767px
+
 @media(max-width: 767px) {
     .post-content {
         padding: 20px;
@@ -598,6 +600,8 @@ body {
     }
 }
 
+
+// 768px
 
 @media(min-width: 768px) {
     .container {
@@ -948,6 +952,16 @@ body {
         max-width: 58.3333333333%;
     }
 
+    .contact__text-content {
+        padding: 65px 60px;
+
+        p {
+            font-size: 20px;
+            line-height: 1.9;
+            padding-bottom: 1px;
+        }
+    }
+
     .search {
         display: block;
     }
@@ -1100,11 +1114,12 @@ body {
         background-color: #212121;
 
         .phone-numbers {
-            padding: 50px 0;
+            padding-top: 80px;
+            padding-bottom: 136px;
 
             p {
-                font-size: 20px;
-                line-height: 1.6;
+                font-size: 29px;
+                line-height: 1.4;
             }
         }
     }
@@ -1113,6 +1128,7 @@ body {
         padding: 30px;
         color: white;
     }
+
 }
 
 /*desktop*/
@@ -1149,7 +1165,7 @@ body {
     }
 
     .btn-link {
-        margin-top: 50px;
+        margin-top: 80px;
     }
 
     .about__services-content {
@@ -1179,5 +1195,14 @@ body {
             font-weight: 300;
             line-height: 2.29;
         }
+    }
+
+    .contact__text-content p {
+        padding-top: 20px;
+        padding-bottom: 19px;
+    }
+
+    .contact__img {
+        height: 359px;
     }
 }
