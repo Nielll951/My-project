@@ -834,7 +834,7 @@ strong {
 }
 .posts-products-block .border-bottom {
   border: 2px solid #d3b000;
-  width: 248px;
+  width: 98%;
   margin-bottom: 35px;
 }
 .posts-products-block .title-block {
@@ -1245,8 +1245,16 @@ strong {
   .posts-products-block {
     padding-left: 0;
   }
+  .posts-products-block h2 {
+    padding-bottom: 20px;
+  }
+  .posts-products-block .title-block {
+    line-height: 1.8;
+    margin-bottom: 39px;
+  }
   .posts-products-block .border-bottom {
-    width: 210px;
+    width: 100%;
+    margin-bottom: 40px;
   }
 }
 @media (max-width: 991px) {
@@ -1551,6 +1559,13 @@ strong {
     padding: 30px;
     color: white;
   }
+
+  .blog__block-img {
+    height: 209px;
+  }
+  .blog__block-img .blog__product-img {
+    height: 209px;
+  }
 }
 /*desktop*/
 @media (min-width: 1200px) {
@@ -1625,6 +1640,13 @@ strong {
 
   .project__block-img .project__product-img {
     height: 300px;
+  }
+
+  .blog__block-img {
+    height: 230px;
+  }
+  .blog__block-img .blog__product-img {
+    height: 230px;
   }
 }
 

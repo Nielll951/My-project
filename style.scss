@@ -729,7 +729,7 @@ strong {
 
     .border-bottom {
         border: 2px solid #d3b000;
-        width: 248px;
+        width: 98%;
         margin-bottom: 35px;
     }
 
@@ -1161,8 +1161,18 @@ strong {
     .posts-products-block {
         padding-left: 0;
 
+        h2 {
+            padding-bottom: 20px;
+        }
+
+        .title-block {
+            line-height: 1.8;
+            margin-bottom: 39px;
+        }
+
         .border-bottom {
-            width: 210px;
+            width: 100%;
+            margin-bottom: 40px;
         }
     }
 
@@ -1485,6 +1495,17 @@ strong {
         color: white;
     }
 
+    .blog__block-img {
+        height: 209px;
+
+        .blog__product-img {
+            height: 209px;
+        }
+    }
+
+    .posts-products-block .border-bottom {
+        // width: 290px;
+    }
 }
 
 /*desktop*/
@@ -1564,5 +1585,17 @@ strong {
 
     .project__block-img .project__product-img {
         height: 300px;
+    }
+
+    // .posts-products-block .border-bottom {
+    //     width: 348px;
+    // }
+
+    .blog__block-img {
+        height: 230px;
+
+        .blog__product-img {
+            height: 230px;
+        }
     }
 }
