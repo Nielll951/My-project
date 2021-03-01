@@ -23,7 +23,7 @@ sendMessageBtns.addEventListener("click",openModal)
 
 function closeModal() {
     modal.classList.add("hide");
-    modal.classList.remove("show");
+    modal.classList.remove("show"); 
 }
 
 function openModal() {
@@ -52,5 +52,24 @@ function showModalByScroll() {
 
 window.addEventListener("scroll",showModalByScroll);
 
+// slider swiper
+new Swiper('.image-slider',{
+    // arrows
+    navigation: {
+        nextEl: '.swiper-button-next', 
+        prevEl: '.swiper-button-prev'
+    },
+    // Навигация
+    // Буллеты, текущее положение, прогрессбар
+    pagination: {
+        el: '.swiper-pagination',
+        // Буллеты
+        clickable: true,
+        // Динамические буллеты
+        dynamicBullets: true,
+    },
     
+    // Автовысота
+    // autoHeight: true,
+});  
     
